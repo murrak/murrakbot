@@ -21,4 +21,4 @@ async def on_message(message):
         await message.channel.send("현재 머락의 크루 : 쉰김치")
 
 
-client.run("NzA2MTA2MDc1MzYyODg1Njk0.Xq1bEA.paxJmPpQzYXo9ERJ73Z82VvaIzY")
+client.run("NzA2MTA2MDc1MzYyODg1Njk0.XrH0mg.Xn4u2rMN5fWk_y0Xp6ytiCGnK5Q")
