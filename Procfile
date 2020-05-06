@@ -1,1 +1,1 @@
-worker: python 머락봇.py
+worker: python py.py
