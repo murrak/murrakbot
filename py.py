@@ -27,5 +27,5 @@ async def on_message(message):
        await message.channel.send("https://www.twitch.tv/murrak")
 
 
-access_token = os.environ[BOT_TOKEN]
-client.run("access_token")
+access_token = os.environ["BOT_TOKEN"]
+client.run(access_token)
