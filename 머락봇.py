@@ -33,5 +33,4 @@ async def on_message(message):
         await message.channel.send("https://www.twitch.tv/murrak")
 
 
-
 client.run("토큰")
