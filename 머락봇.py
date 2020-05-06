@@ -1,6 +1,4 @@
 import discord
-import os
-
 
 client = discord.Client()
 
@@ -17,11 +15,23 @@ async def on_message(message):
         await message.channel.send("머락이 개발한 아주 간단한 머락봇입니다 ~명령어를 사용하세요")
 
     if message.content.startswith("~명령어"):
-        await message.channel.send("~정보, ~명령어, ~크루")
+        await message.channel.send("~정보, ~명령어, ~크루, ~쉰김치유튜브, ~머락유튜브, ~쉰김치트위치, ~머락트위치")
 
     if message.content.startswith("~크루"):
         await message.channel.send("현재 머락의 크루 : 쉰김치")
 
+    if message.content.startswith("~쉰김치유튜브"):
+        await message.channel.send("https://www.youtube.com/channel/UC9GATWJ_c2njfsORBn6bk1Q")
 
-access_token = os.environ["BOT_TOKEN"]
-client.run(access_token)        
+    if message.content.startswith("~머락유튜브"):
+        await message.channel.send("https://www.youtube.com/channel/UC7DkGh8P4jJ9RqxS4O3I-Iw")
+
+    if message.content.startswith("~쉰김치트위치"):
+        await message.channel.send("https://www.twitch.tv/kimchishin")
+
+    if message.content.startswith("~머락트위치"):
+        await message.channel.send("https://www.twitch.tv/murrak")
+
+
+
+client.run("토큰")
